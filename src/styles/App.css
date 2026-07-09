@@ -1,0 +1,46 @@
+/* Centrar el título principal */
+.titulo-carro {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #343a40;
+  letter-spacing: 2px;
+  text-align: center; /* centrado real */
+}
+
+/* Formulario compacto y alineado */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px; /* menos separación entre elementos */
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+/* Inputs más proporcionados */
+form input {
+  height: 38px;
+  width: 160px; /* ancho más natural */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+/* Botón más visible y alineado */
+.boton-guardar {
+  height: 38px;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0 20px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.boton-guardar:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}

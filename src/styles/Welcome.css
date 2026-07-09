@@ -1,0 +1,28 @@
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Inputs más estrechos */
+.login-input {
+  max-width: 280px;   /* ancho cómodo */
+  margin: 0 auto 12px auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Botón alineado con los inputs */
+.login-btn {
+  max-width: 280px;
+  margin: 10px auto 0 auto;
+  display: block;
+  font-weight: 500;
+}

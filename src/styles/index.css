@@ -1,0 +1,66 @@
+/* Scoped a .App para no afectar Welcome.css */
+.App .product-form {
+  gap: 4px;               /* separación mínima */
+  flex-wrap: nowrap;      /* mantener en una línea en pantallas anchas */
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+/* Anula width:100% de Bootstrap solo dentro de product-form */
+.App .product-form .form-control {
+  width: auto !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Inputs compactos y sin márgenes extra */
+.App .product-input {
+  height: 34px;           /* coincide con form-control-sm */
+  width: 140px;           /* ajusta a 130/150 según prefieras */
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Botón con misma altura y presencia */
+.App .boton-guardar {
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background: linear-gradient(180deg,#28a745,#1f7a2f);
+  color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Evitar que hover cambie tamaño y desplace la línea */
+.App .boton-guardar:hover {
+  background: linear-gradient(180deg,#2fb04a,#1f7a2f);
+  transform: none;
+}
+
+/* Anular utilidades que puedan añadir margin-bottom dentro de la barra */
+.App .product-form .mb-2,
+.App .product-form .mb-3 {
+  margin-bottom: 0 !important;
+}
+
+/* Responsive: en pantallas pequeñas se envuelven manteniendo proporciones */
+@media (max-width: 520px) {
+  .App .product-form {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .App .product-input,
+  .App .boton-guardar {
+    width: 100%;
+    max-width: 320px;
+  }
+}
