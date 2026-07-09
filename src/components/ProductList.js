@@ -54,6 +54,7 @@ const ProductList = () => {
   // <ProductForm onProductoAgregado={cargarProductos} />  este codigo permite que el componente ProductForm pueda llamar a la funcion cargarProductos cuando se agregue un nuevo producto, para que la lista de productos se actualice automaticamente
   //  <ProductItem producto={p} onAdd={agregarAlCarrito} />  este codigo permite que el componente ProductItem pueda llamar a la funcion agregarAlCarrito cuando se haga click en el boton de agregar al carrito, para que el carrito se actualice automaticamente
   return (
+    
     <div className="container my-4">
       <h2 className="mb-4 text-center text-success">Lista de productos</h2>
 
