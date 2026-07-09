@@ -1,5 +1,6 @@
 // App.js
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// CAMBIO AQUÍ: Cambiamos BrowserRouter por HashRouter
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ProductList from "../components/ProductList";
 import Welcome from "../components/Welcome";
 import PrivateRoute from "../services/PrivateRoute";
