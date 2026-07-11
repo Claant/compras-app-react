@@ -1,7 +1,7 @@
-// src/firebaseConfig.js
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
+import { getAuth } from "firebase/auth";       // Tu autenticación actual
+import { getFirestore } from "firebase/firestore"; // Tu base de datos actual
+import { getStorage } from "firebase/storage";   //  AGREGA ESTA IMPORTACIÓN
 
 
 // Your web app's Firebase configuration
@@ -17,6 +17,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Exportar servicios
+// Exportar los servicios para usarlos en tus componentes
 export const db = getFirestore(app);
 export const auth = getAuth(app);
+export const storage = getStorage(app);  // 👈 3. AGREGA "export" ANTES DE LA VARIABLE

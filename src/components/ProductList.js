@@ -61,13 +61,15 @@ const ProductList = () => {
 
       <ProductForm onProductoAgregado={cargarProductos} />
 
-      <div className="row">
-        {productos.map((p) => (
-          <div key={p.id} className="col-md-4 mb-3">
-            <ProductItem producto={p} onAdd={agregarAlCarrito} />
-          </div>
-        ))}
-      </div>
+      {/* Sección del catálogo de productos */}
+<div className="row mt-4">
+  {productos.map((p) => (
+    <div key={p.id} className="col-12 col-sm-6 col-md-4 mb-4">
+      {/* Pasamos el producto y el callback de agregar al carrito */}
+      <ProductItem producto={p} onAdd={agregarAlCarrito} />
+    </div>
+  ))}
+</div>
 
       <h3 className="mt-5 text-success">Carrito</h3>
       <table className="table table-striped table-bordered mt-3">
