@@ -1,13 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.carro.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.carro.app" version="1.0.0" xmlns="http://w3.org" xmlns:cdv="http://apache.org">
     <name>CarroComprasApp</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Aplicación Híbrida de Carrito de Compras con React y Firebase - Iplacex.
     </description>
-    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
-        Apache Cordova Team
+    <author email="dev@cordova.apache.org" href="https://apache.org">
+        Claudio Estay Diaz
     </author>
+    
     <content src="index.html" />
+    
+    <!-- HABILITAR ACCESO A INTERNET Y SERVIDORES DE FIREBASE -->
+    <access origin="*" />
+    <allow-navigation href="*" />
+    
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="KeepRunning" value="true" />
+    </platform>
 </widget>
