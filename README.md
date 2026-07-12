@@ -21,7 +21,7 @@
 
 ---
 
-## ESTRUCTURA DE DATOS
+## *ESTRUCTURA DE DATOS*
 
 ### Los productos se almacenan dentro de una coleccion unica llamada `**productos**`.
 
