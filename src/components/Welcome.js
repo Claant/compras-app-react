@@ -29,14 +29,14 @@ export default function WelcomeView() {
     <input
       type="email"
       className="form-control mb-3 login-input"
-      placeholder="Correo"
+      placeholder="claudio@ejemplo.com"
       value={email}
       onChange={(e) => setEmail(e.target.value)}
     />
     <input
       type="password"
       className="form-control mb-3 login-input"
-      placeholder="Contraseña"
+      placeholder="12345678"
       value={password}
       onChange={(e) => setPassword(e.target.value)}
     />
