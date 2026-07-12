@@ -17,6 +17,8 @@
 
 ### 7. **App.js**: Corresponde al layout del proyecto web. Envuelve el componente `**ProductList.js**` con el midleware `**PrivateRoute**` para garantizar que la pagina principal no sea accesible ante ingresos no autorizados.
 
+### 7. **Index.js**: Corresponde al componente de entrada principal, que inicializa los componentes de React, montando el contenedor raiz en el DOM del navegador, en este caso `**App.js**`. Implementa de manera global la biblioteca `**Bootstrap**` junto con las hojas de estilos personalizadas `**App.css**`, `**index.css**` y `**Welcome.css**`.
+
 ---
 
 ## ESTRUCTURA DE DATOS
