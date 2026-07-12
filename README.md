@@ -1,14 +1,15 @@
 # PROYECTO WEB  CARRO-COMPRAS-APP
----
+<br>
 ## ARQUITECTURA DE COMPONENTES
----
+<br>
 ### 1. **firebase.js**: Se encarga de la conexion con Firebase, donde inicializa las instancias de Firestore, Auth y Storage.
 
 
 ### 2. **PrivateRoute.js**: Es un midleware que se encarga de interceptar los accesos a los modulos privados. Su funcion es detectar un inicio de sesion, si es activo, permite el acceso a la vista principal, en caso contrario si es nulo, es redirigido a la vista de Welcome, donde debera logearse con sus credenciales correctas.
 
-
+<p align="justify">
 ### 2. **WelcomeView.js**: Componente que gestiona el inicio de sesion, en donde el cliente debera ingresar sus credenciales, en este caso email y password, y al enviarse el formulario con esos datos, se ejecuta el metodo **signInWithEmailAndPassword** de Firebase Auth. Si las credenciales son correctas, se utiliza **hook useNavigate** para rederigir a la pagina principal.
+</p>
 
 ### 3. **ProductList.js**: Corresponde al componente Padre, cumple una funcion importante, primero porque ejecuta una funcion asincrona **cargarProductos** que realiza una consulta a la coleccion de Firestore. Como segundo punto importante implementa la funcion **agregarAlCarrito** que es pasada como callback a los componentes hijos en este caso a los componentes ProductForm.jsx y ProductItem.js, la cual agrega productos al carro de compras.
 
