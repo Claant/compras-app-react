@@ -1,7 +1,7 @@
-# *PROYECTO WEB  CARRO-COMPRAS-APP*
----
-## *ARQUITECTURA DE COMPONENTES*
----
+# *PROYECTO WEB  CARRO-COMPRAS-APP* ---
+
+## *ARQUITECTURA DE COMPONENTES* 
+
 ### 1. *firebase.js*: Se encarga de la conexion con Firebase, donde inicializa las instancias de Firestore, Auth y Storage.
 
 ### 2. *PrivateRoute.js*: Es un midleware que se encarga de interceptar los accesos a los modulos privados. Su funcion es detectar un inicio de sesion, si es activo, permite el acceso a la vista principal, en caso contrario si es nulo, es redirigido a la vista de Welcome, donde debera logearse con sus credenciales correctas.
