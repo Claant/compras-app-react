@@ -4,7 +4,6 @@
 ---
 ### 1. **firebase.js**: Se encarga de la conexion con Firebase, donde inicializa las instancias de Firestore, Auth y Storage.
 
-
 ### 2. **PrivateRoute.js**: Es un midleware que se encarga de interceptar los accesos a los modulos privados. Su funcion es detectar un inicio de sesion, si es activo, permite el acceso a la vista principal, en caso contrario si es nulo, es redirigido a la vista de Welcome, donde debera logearse con sus credenciales correctas.
 
 ### 3. **WelcomeView.js**: Componente que gestiona el inicio de sesion, en donde el cliente debera ingresar sus credenciales, en este caso email y password, y al enviarse el formulario con esos datos, se ejecuta el metodo **signInWithEmailAndPassword** de Firebase Auth. Si las credenciales son correctas, se utiliza **hook useNavigate** para rederigir a la pagina principal.
@@ -16,13 +15,18 @@
 
 ### 6. **ProductItem.js**: Este componente se encarga de renderizar los cards individuales de cada producto.
 
+### 7. **App.js**: Corresponde al layout del proyecto web. Envuelve el componente **ProductList.js** con el midleware **PrivateRoute** para garantizar que la pagina principal no sea accesible ante ingresos no autorizados.
+
 ---
 
 ## ESTRUCTURA DE DATOS
 
+### Los productos se almacenan dentro de una coleccion unica llamada **productos**.
+
 ```
 productos
+  ├── imagenUrl: string (Enlace de descarga público de Firebase Storage)
   ├── nombre: string
-  ├── precio: number
-  └── imagenUrl: string (Enlace de descarga público de Firebase Storage)
+  └── precio: number
 ```
+
