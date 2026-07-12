@@ -20,9 +20,9 @@
 
 ## ESTRUCTURA DE DATOS
 
-**productos 
+```
+productos
   ├── nombre: string
   ├── precio: number
-  └── imagenUrl: string (Enlace de descarga público de Firebase Storage)**
-
-
+  └── imagenUrl: string (Enlace de descarga público de Firebase Storage)
+```
