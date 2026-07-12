@@ -11,7 +11,7 @@
 
 ### 4. *ProductList.js*: Corresponde al componente Padre, cumple una funcion importante, primero porque ejecuta una funcion asincrona `**cargarProductos**` que realiza una consulta a la coleccion de Firestore. Como segundo punto importante implementa la funcion `**agregarAlCarrito**` que es pasada como callback a los componentes hijos en este caso a los componentes `**ProductForm.jsx**` y `**ProductItem.js**`, la cual agrega productos al carro de compras.
 
-### 5. *ProductForm.jsx*: Este componente se encarga de gestionar el formulario, que permite agregar nuevos productos al catalogo. Dentro del formulario existe el campo para subir un archivo de imagen, la cual es almacenada en Storage de Firebase. Al completar la informacion solicitada en los campos del formulario, es enviada a Firestore, donde se crea un nuevo documento en la coleccion. Al hacer clic en el boton Guardar Producto, se ejecuta la funcion prop `**onProductoAgregado**` comunicando al componente Padre `**ProductList.js**` que refresque la lista de productos del catalogo.
+### 5. *ProductForm.jsx*: Este componente se encarga de gestionar el formulario, que permite agregar nuevos productos al catalogo. Dentro del formulario existe el *campo* para subir un archivo de imagen, la cual es almacenada en Storage de Firebase. Al completar la informacion solicitada en los campos del formulario, es enviada a Firestore, donde se crea un nuevo documento en la coleccion. Al hacer clic en el boton Guardar Producto, se ejecuta la funcion prop `**onProductoAgregado**` comunicando al componente Padre `**ProductList.js**` que refresque la lista de productos del catalogo.
 
 ### 6. *ProductItem.js*: Este componente se encarga de renderizar los cards individuales de cada producto.
 
