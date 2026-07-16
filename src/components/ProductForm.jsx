@@ -4,6 +4,8 @@ import { db, storage } from "../services/firebase.js"; // 👈 Asegúrate de imp
 import { addDoc, collection } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"; // 👈 Módulos de Storage
 
+// esta funcion  se encarga de crear un nuevo producto y subir la imagen a Firebase Storage
+
 function ProductoForm({ onProductoAgregado }) {
   const [nombre, setNombre] = useState("");
   const [precio, setPrecio] = useState("");

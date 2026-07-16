@@ -4,7 +4,7 @@ import { collection, getDocs } from "firebase/firestore";
 import ProductItem from "../components/ProductItem.js";
 import ProductForm from "../components/ProductForm.jsx";
 
-// aca se define el componente ProductList, que maneja la lista de productos y el carrito de compras
+// esta funcion se encarga de manjear la lista de productos y el carrito de compras
 const ProductList = () => {
   const [carrito, setCarrito] = useState([]);
   const [productos, setProductos] = useState([]);

@@ -1,5 +1,7 @@
 import React from "react";
 
+
+// esta funcion se encarga de renderizar un producto individual, mostrando su nombre, precio y foto, y permite agregarlo al carrito
 const ProductItem = ({ producto, onAdd }) => {
   // Si por alguna razón un producto antiguo de tu Firestore no tiene foto, 
   // le ponemos una imagen gris por defecto para que la app no se vea rota.
